@@ -9,7 +9,7 @@ steps:
 
   - name: node:16.14.2
     id: 'Generate .env file'
-    entrypoint: npm
+    entrypoint:
     args: ['run', 'cloud-secrets']
     env:
       - 'PROJECT_ID=$PROJECT_ID'
